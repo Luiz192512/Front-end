@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Saltando</title>
+    <style>
+        body{
+            display: flex; 
+            justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background-color: plum;
+        }
+        .caixa-saltando{
+            width: 200px;
+            height: 100px;
+            background-color: brown;
+            position: relative;
+            animation: saltar 1ms infinite;
+            border-radius: 0 45% 45% 0;
+
+        }
+        .circulo{
+            float: left;
+        width: 300px; ;
+        height: 300px;
+        clip-path: circle(50% at 0 );
+        border-radius: 50%;
+        background: rgb(238, 16, 153);
+        shape-outside: circle(50% at 50%)
+        }
+        @keyframes saltar {
+            0%, 100%{ left: 0;}
+            50% {left: -90px;}
+        }
+    </style>
+</head>
+<body>
+   <div class="caixa-saltando"></div>
+   <div class="circulo"></div>
+</body>
+</html>
