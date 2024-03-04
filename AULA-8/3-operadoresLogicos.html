@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var energia = 80;
+        var velocidade;
+        if((energia >= 80) && (energia <= 100)){
+            document.write("Energia está alta")
+            velocidade = 100;
+        }else if ((energia >= 60) && (energia < 80)){
+            document.write("Energia boa")
+            velocidade = 80;
+        }else if ((energia >= 40) && (energia < 60)){
+            document.write("Energia méida")
+            velocidade = 60;
+        }else if ((energia >= 20) && (energia < 40)){
+            document.write("Energia baixa")
+            velocidade = 40;
+        }else if ((energia >= 1) && (energia < 20)){
+            document.write("Energia crítica")
+            velocidade = 20;
+        }else {
+            document.write("Sem energia")
+            velocidade = 0;
+        }
+
+    </script>
+    
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
