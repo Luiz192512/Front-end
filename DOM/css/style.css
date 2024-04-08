@@ -1,0 +1,17 @@
+button{
+    transition: 0.5s;
+    border-radius: 5px;
+    border-color: none;
+    box-shadow: inset 01px 7px 16px 1px;
+}
+
+button:hover{
+    background-color: aqua;
+    scale: 1.1;
+}
+
+input{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-color: unset;
+}
